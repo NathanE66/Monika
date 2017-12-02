@@ -1,0 +1,23 @@
+# Windows bits and bobs
+thumbs.db
+
+# OS X bits and bobs
+.DS_Store
+*/.DS_Store
+
+# Unix stuff
+
+# Swap files
+*.swp
+*/*.swp
+
+# IJ/Pycharm projects
+*.iml
+*/*.iml
+.idea
+*/.idea
+
+# Token file
+# Note this isn't case sensitive on Windows, but will be on UNIX.
+token.txt
+
