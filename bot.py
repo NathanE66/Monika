@@ -55,7 +55,7 @@ async def on_message(message):
     # there are 47 lick gifs
     # ! important, update if changed
     if message.content.startswith('$lick'):
-        lickresult = random.randint(1, 47)
+
         images = ["https://media.giphy.com/media/11o44A5ZoR4cZq/giphy.gif",
                   "https://media.giphy.com/media/kVDaetFZqnDXi/giphy.gif", "https://tenor.com/Mzb5.gif",
                   "https://tenor.com/ziBy.gif", "https://imgur.com/uyYwsr9", "https://imgur.com/Lc278Vq",
@@ -73,7 +73,7 @@ async def on_message(message):
                   "https://imgur.com/U3m2j6o", "https://imgur.com/9V8YZyt", "https://imgur.com/drw9h4I",
                   "https://imgur.com/3rfKAQK", "https://imgur.com/M8ESfae", "https://imgur.com/bVy3PzS",
                   "https://imgur.com/tkQUdIM", "https://imgur.com/U8tzSCf"]
-        await message.channel.send(images[lickresult])
+        await message.channel.send(random.choice(images))
 
     if message.content.startswith('$lenny'):
         await message.delete()
