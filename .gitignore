@@ -20,4 +20,5 @@ thumbs.db
 # Token file
 # Note this isn't case sensitive on Windows, but will be on UNIX.
 token.txt
+dan_token.txt
 
