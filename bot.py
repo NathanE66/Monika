@@ -34,13 +34,12 @@ async def on_message(message):
             tbs = tbs[7:]
             await message.channel.send(tbs)
         else:
-            rand_spook = random.randint(1, 3)
             spooks = {1: "https://www.youtube.com/watch?v=w0RA_LZC0Jg", 2: "https://i.redd.it/w42owez9o6yz.png",
                       3: "https://vignette.wikia.nocookie.net/doki-doki-literature-club/images/2/2e/Act_3_Classroom.gif"
                       }
             await message.author.create_dm()
             dmchannel = message.author.dm_channel
-            await dmchannel.send(spooks[rand_spook])
+            await dmchannel.send(random.choice(spooks))
 
     if message.content.startswith('$8ball'):
         result = random.randint(1, 20)
